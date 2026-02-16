@@ -665,3 +665,28 @@ body > p {
   opacity: 1;
   transform: translateY(0);
 }
+
+footer {
+  padding-bottom: 100px; /* מספיק מקום לכפתור וואצפ */
+  text-align: center;
+  background-color: #f4f4f4;
+  padding-top: 20px;
+}
+
+/* התאמה למובייל */
+@media (max-width: 768px) {
+  .whatsapp-button {
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .whatsapp-button i {
+    font-size: 24px;
+  }
+
+  footer {
+    padding-bottom: 120px; /* עוד יותר ריווח במובייל */
+  }
+}
