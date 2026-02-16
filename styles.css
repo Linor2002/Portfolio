@@ -634,6 +634,20 @@ body > p {
   font-size: 24px;
 }
 
+/* התאמה למובייל */
+@media (max-width: 768px) {
+  .whatsapp-button {
+    bottom: 20px; /* קצת יותר למעלה מהמכשיר */
+    right: 20px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .whatsapp-button i {
+    font-size: 24px;
+  }
+}
+
 /* =======================
    אנימציות לכרטיסים
 ======================= */
