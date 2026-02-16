@@ -1,0 +1,644 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  background-color: #f5f7fa;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1e3a8a;
+}
+
+/* =========================
+     Navbar
+  ========================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgb(216, 216, 218);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  font-family: "Heebo", sans-serif;
+}
+
+/* Left - טלפון */
+.nav-left .nav-phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.nav-left .nav-phone i {
+  color: #0d6efd;
+  font-size: 1.5rem;
+}
+
+.nav-left .nav-phone a {
+  text-decoration: none;
+  color: #181717;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+}
+
+/* Center - קישורים */
+.nav-center .nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-center .nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: rgb(35, 33, 33);
+  transition: 0.3s;
+}
+
+.nav-center .nav-links a:hover {
+  color: #f59e0b;
+}
+
+/* Right - לוגו + כפתור */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-logo img {
+  height: 80px;
+  width: auto;
+}
+
+/* Menu button */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.nav-links i {
+  color: #466399;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+}
+
+/* מובייל */
+@media (max-width: 900px) {
+  .nav-center .nav-links {
+    flex-direction: column;
+    width: 100%;
+    max-height: 0; /* נסתר כברירת מחדל */
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: rgb(216, 216, 218);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .nav-center .nav-links.active {
+    max-height: 500px;
+  }
+
+  .nav-center .nav-links a {
+    display: block;
+    padding: 15px 0;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-left,
+  .nav-right {
+    z-index: 1001;
+  }
+}
+/* =========================
+     Header
+  ========================= */
+
+.header {
+  height: 90vh;
+  background: linear-gradient(rgba(28, 27, 27, 0.6), rgba(20, 19, 19, 0.6)),
+    url("https://images.pexels.com/photos/189524/pexels-photo-189524.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  color: white;
+}
+
+.header-text h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.header-text span {
+  color: #f59e0b;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background: #f59e0b;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #d97706;
+}
+.cta-btn:hover {
+  background: #084298;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* אנימציות */
+@keyframes bounce {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* רספונסיבי */
+@media (max-width: 768px) {
+  .header-text h1 {
+    font-size: 2.2rem;
+  }
+  .tagline {
+    font-size: 1.2rem;
+  }
+  .cta-btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+  .logo-header {
+    font-size: 50px;
+  }
+}
+
+/* =========================
+     About
+  ========================= */
+
+#about {
+  padding: 100px 20px;
+  background: rgb(216, 216, 216);
+}
+
+.about-content {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.profile-img img {
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-text p {
+  margin-bottom: 30px;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+/* =========================
+     Services
+  ========================= */
+
+.sevices {
+  padding: 100px 20px;
+}
+
+.services-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.services-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.services-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.services-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+/* סקשן גלריה */
+.gallery-section {
+  padding: 60px 20px;
+  background: #f7f9fc;
+  text-align: center;
+}
+
+.gallery-section .section-title {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #0d6efd;
+  font-weight: 700;
+}
+
+/* מיכל גלריה עם חיצים */
+.gallery-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* סליידר */
+.gallery-slider {
+  display: flex;
+  overflow-x: hidden; /* מסתיר את התמונות שמעבר */
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 1000px; /* בערך 4 תמונות ברוחב */
+}
+
+/* כל תמונה */
+.gallery-item {
+  flex: 0 0 25%; /* כל תמונה תופסת 1/4 מהרוחב */
+  padding: 10px;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* כיתוב מתחת לכל תמונה */
+.gallery-item .caption {
+  margin-top: 5px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* חיצים */
+.gallery-wrapper button {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(13, 110, 253, 0.8);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.gallery-wrapper .prev {
+  right: -30px;
+}
+
+.gallery-wrapper .next {
+  left: -30px;
+}
+
+.gallery-wrapper button:hover {
+  background: rgba(13, 110, 253, 1);
+}
+/* =========================
+     Comments
+  ========================= */
+
+.comments {
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #f7f9fc, #eef3f9);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 50px;
+  color: #0d6efd;
+  font-weight: 700;
+}
+
+/* גריד */
+.comments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px; /* רווח גדול וברור בין ביקורות */
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* כרטיס ביקורת */
+.comment-card {
+  position: relative;
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.4s ease;
+  text-align: right;
+  border-top: 4px solid #0d6efd; /* פס עליון מקצועי */
+}
+
+/* אפקט hover יוקרתי */
+.comment-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* אייקון מרכאות */
+.quote-icon {
+  font-size: 60px;
+  color: rgba(13, 110, 253, 0.1);
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+/* כוכבים */
+.stars {
+  color: #ffc107;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+/* טקסט */
+.comment-card p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* שם לקוח */
+.reviewer {
+  font-weight: bold;
+  color: #0d6efd;
+  font-size: 0.95rem;
+  display: block;
+  padding-top: 10px;
+  border-top: 1px solid #eee; /* קו הפרדה עדין בתוך הכרטיס */
+}
+
+/* לייטבוקס */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.lightbox-overlay img:hover {
+  transform: scale(1.02);
+}
+
+/* =========================
+     Contact
+  ========================= */
+
+.contact-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f8f9fa;
+}
+
+.contact-section h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+#contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  text-align: right;
+  direction: rtl;
+}
+
+#contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+#contact-form button {
+  background: #25d366;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contact-form button:hover {
+  background: #1ebe5d;
+}
+
+.form-status {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
+
+/* =========================
+     Footer
+  ========================= */
+
+footer,
+body > p {
+  text-align: center;
+  padding: 20px;
+  background: #1e3a8a;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* =========================
+     Responsive
+  ========================= */
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .header-text h1 {
+    font-size: 2rem;
+  }
+}
+
+/* =======================
+אנימציות גלילה
+======================= */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =======================
+   כפתור וואטסאפ צף
+======================= */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px; /* RTL אפשר לשנות ל-right */
+  background: #25d366;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* אייקון וואטסאפ */
+.whatsapp-btn i {
+  font-size: 24px;
+}
+
+/* =======================
+   אנימציות לכרטיסים
+======================= */
+.services-card,
+.comments-grid > div,
+.contact-form {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.services-card.visible,
+.comments-grid > div.visible,
+.contact-form.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <meta
+      name="description"
+      content="חשמלאי מוסמך באיזור המרכז, תיקון תקלות חשמל בבית ובעסק."
+    />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>אברהם עובדיה - חשמלאי מוסמך</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <!-- מספר טלפון -->
+        <div class="nav-phone">
+          <i class="fa-solid fa-phone-flip"></i>
+          <a href="tel:0502475118">050-2475118</a>
+        </div>
+      </div>
+
+      <div class="nav-center">
+        <!-- תפריט קישורים -->
+        <div class="nav-links">
+          <a href="#home">
+            <i class="fa-solid fa-house-chimney"></i> דף הבית
+          </a>
+          <a href="#about"> <i class="fa-solid fa-user"></i> אודות </a>
+          <a href="#services"> <i class="fa-solid fa-toolbox"></i> שירותים </a>
+          <a href="#comments"> <i class="fa-solid fa-comment"></i> ביקורות </a>
+          <a href="#contact">
+            <i class="fa-solid fa-phone-flip"></i> צור קשר
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <!-- לוגו -->
+        <a href="#home" class="nav-logo">
+          <img src="images/logo.png" alt="לוגו" />
+        </a>
+
+        <!-- כפתור המבורגר למובייל -->
+        <button class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="home" class="header">
+      <div class="header-content">
+        <div class="header-text">
+          <h1>אברהם עובדיה <span>– חשמלאי מוסמך</span></h1>
+          <p class="tagline">כל עבודות החשמל במקצועיות ללא פשרות</p>
+          <a href="#contact" class="cta-btn"> צור קשר </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" aria-checked="about">
+      <div class="about-content">
+        <div class="profile-img">
+          <img
+            src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg"
+            alt="חשמלאי מוסמך"
+            height="300"
+            width="500"
+          />
+        </div>
+        <div class="about-text">
+          <p>
+            מבצע את כל סוגי עבודות החשמל – החל מתיקון תקלות בבית, התקנות ועד
+            פתרונות מותאמים אישית למשרד ולעסק.
+          </p>
+          <p>
+            אני מתחייב לשירות <strong>אמין, מקצועי</strong>, עם דגש על יחס אישי
+            לכל לקוח ודאגה שהעבודה תתבצע בצורה הבטוחה והיעילה ביותר.
+          </p>
+          <p>נותן שירות באיזור המרכז</p>
+          <p>
+            <strong>שירות מקצועי 24/6</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="sevices" id="services">
+      <div class="services-content">
+        <h2 class="section-title">אני יכול לעזור לכם ב:</h2>
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="services-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/2547/2547039.png"
+              alt="תקלות חשמל"
+            />
+            <h3>טיפול בכל תקלות החשמל בזמינות גבוהה</h3>
+          </div>
+          <!-- Service 2 -->
+          <div class="services-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/4152/4152103.png"
+              alt="לוחות חשמל"
+            />
+            <h3>החלפת וחידוש לוחות חשמל</h3>
+            <p>לוחות מתקדמים של מיטב היצרניות בתחום</p>
+          </div>
+          <!-- Service 3 -->
+          <div class="services-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/675/675806.png"
+              alt="הוספת נקודות"
+            />
+            <h3>הוספת נקודות חדשות</h3>
+            <p>שקע חד פאזי, שקע תלת פאזי, שקע כוח</p>
+          </div>
+          <!-- Service 4 -->
+          <div class="services-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/8044/8044400.png"
+              alt="שקעים"
+            />
+            <h3>החלפת שקעים ומפסקים</h3>
+          </div>
+          <!-- Service 5 -->
+          <div class="services-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/2640/2640516.png"
+              alt="בית חכם"
+            />
+            <h3>חיווט בית חכם והתקנת מפסקים חכמים</h3>
+          </div>
+          <!-- Service 6-->
+          <div class="services-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/9272/9272480.png"
+              alt="החלפת ממסר פחת"
+            />
+            <h3>החלפת ממסר פחת</h3>
+          </div>
+          <!-- Service 7 -->
+          <div class="services-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/4823/4823792.png"
+              alt="תליית גופי תאורה"
+            />
+            <h3>תליית גופי תאורה ותנורי חימום לאמבטיה</h3>
+          </div>
+          <!-- Service 8 -->
+          <div class="services-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/4277/4277344.png"
+              alt="עמדת טעינה לרכב שמלי"
+            />
+            <h3>התקנת עמדות טעינה לרכב חשמלי</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Field photos-->
+      <h2 class="section-title">תמונות מהשטח</h2>
+
+      <div class="gallery-wrapper">
+        <!-- חץ ימין -->
+        <button class="next">&#10094;</button>
+
+        <!-- הסליידר -->
+        <div class="gallery-slider">
+          <div class="gallery-item">
+            <img src="images/work1.jpg" alt="תיקון לוח חשמל" />
+            <p class="caption">תיקון לוח חשמל</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/work2.jpg" alt="התקנת שקעים חדשים" />
+            <p class="caption">התקנת שקעים חדשים</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/work3.jpg" alt="חיווט לבית חכם" />
+            <p class="caption">חיווט לבית חכם</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/work4.jpg" alt="תליית גופי תאורה" />
+            <p class="caption">תליית גופי תאורה</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/work5.jpg" alt="התקנת עמדות טעינה" />
+            <p class="caption">התקנת עמדות טעינה</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/work6.jpg" alt="החלפת ממסר פחת" />
+            <p class="caption">החלפת ממסר פחת</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/work7.jpg" alt="חידוש לוחות חשמל" />
+            <p class="caption">חידוש לוחות חשמל</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/work8.jpg" alt="התקנת מפסקים חכמים" />
+            <p class="caption">התקנת מפסקים חכמים</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/work9.jpg" alt="התקנת מפסקים חכמים" />
+            <p class="caption">התקנת מפסקים חכמים</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/work10.jpg" alt="התקנת מפסקים חכמים" />
+            <p class="caption">התקנת מפסקים חכמים</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/work11.jpg" alt="התקנת מפסקים חכמים" />
+            <p class="caption">התקנת מפסקים חכמים</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/work12.jpg" alt="התקנת מפסקים חכמים" />
+            <p class="caption">התקנת מפסקים חכמים</p>
+          </div>
+        </div>
+
+        <!-- חץ שמאל -->
+        <button class="prev">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Comment -->
+    <section id="comments" class="comments">
+      <div class="comment-section">
+        <h2 class="section-title">ביקורות של לקוחות</h2>
+
+        <div class="comments-grid">
+          <!-- Comment 1 -->
+          <div class="comment-card">
+            <div class="quote-icon">“</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>שירות מהיר ואמין, הגיע תוך חצי שעה!</p>
+            <span class="reviewer">דוד ל.</span>
+          </div>
+
+          <!-- Comment 2 -->
+          <div class="comment-card">
+            <div class="quote-icon">“</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>ממליצה בחום. אדם מקצועי, ישר והגון והמחיר הוגן. תודה על הכל.</p>
+            <span class="reviewer">ענבל ק.</span>
+          </div>
+
+          <!-- Comment 3 -->
+          <div class="comment-card">
+            <div class="quote-icon">“</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              היה מעולה, אמין ומקצועי. עבודה מסודרת ונקייה וטיפל בבעיה במהירות
+              וביסודיות.
+            </p>
+            <span class="reviewer">יאיר א.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <h2>צור קשר</h2>
+
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="שם מלא" required />
+        <input type="tel" id="phone" placeholder="טלפון" required />
+        <textarea
+          id="message"
+          placeholder="איך אפשר לעזור?"
+          required
+        ></textarea>
+
+        <button type="submit">שליחה לוואטסאפ</button>
+      </form>
+
+      <p id="form-status" class="form-status"></p>
+    </section>
+
+    <!-- Footer -->
+    <p>אתר זה עוצב ונבנה ע״י לינור עובדיה</p>
+
+    <a href="https://wa.me/972502475118" class="whatsapp-btn" target="_blank">
+      <i class="fab fa-whatsapp"></i> שלח הודעה
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
