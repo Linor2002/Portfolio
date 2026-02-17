@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://avraham-ovadia.netlify.app/sitemap.xml
