@@ -65,6 +65,8 @@ The website is fully responsive and optimized for:
 <img width="1487" height="722" alt="צילום מסך 2026-02-17 ב-14 41 16" src="https://github.com/user-attachments/assets/d0775adc-103b-420b-8736-77dfa81778ca" />
 <img width="1485" height="658" alt="צילום מסך 2026-02-17 ב-14 41 56" src="https://github.com/user-attachments/assets/0846538c-1698-44ac-ac6a-8f145d55f198" />
 
+Automated Testing<img width="1277" height="800" alt="צילום מסך 2026-07-19 ב-12 44 47" src="https://github.com/user-attachments/assets/edb070da-afb3-470c-b17a-af25b91d3cf5" />
+
 
 
 
