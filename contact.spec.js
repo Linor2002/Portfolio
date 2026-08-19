@@ -29,7 +29,7 @@ test("should submit contact form and redirect to WhatsApp", async ({
 
 
 
-// בדיקת ולידציה בטופס אם נכניס מספר לא תקין מה יקרה
+//2.  בדיקת ולידציה בטופס אם נכניס מספר לא תקין מה יקרה
 test("should show validation error on invalid phone number", async ({
   page,
 }) => {
@@ -46,7 +46,7 @@ test("should show validation error on invalid phone number", async ({
 
 
 
-// בדיקת תקינות של כותרת האתר או אלמנט מרכזי
+//3. בדיקת תקינות של כותרת האתר או אלמנט מרכזי
 test("should display the correct main heading on the page", async ({
   page,
 }) => {
@@ -59,7 +59,7 @@ test("should display the correct main heading on the page", async ({
 
 
 
-// Responsive Test - בדיקת נראות הכפתור במסך מובייל (עם גלילה)
+// 4. Responsive Test - בדיקת נראות הכפתור במסך מובייל (עם גלילה)
 test("submit button should be visible on mobile viewport", async ({ page }) => {
   // הדמיית גודל מסך של טלפון נייד (אייפון)
   await page.setViewportSize({ width: 375, height: 667 });
